@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static%}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -12,10 +13,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static "style.css" %}">
+        {% tailwind_css %}
     </head>
     <body>
-        <h1> Welcome to our page</h1>
-        {%block content %} content {%endblock%}
+        <h1> Welcome </h1>
+        {%block content %} 
+        <h1 class="bg-orange-500 text-3xl">hello world</h1>
+        {%endblock%}
+     
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

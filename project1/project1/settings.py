@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'newapp',
+    'tailwind',
+    'theme',
+    'django_browser_reload'
 ]
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = ['127.0.0.1']
+NPM_BIN_PATH = '/home/ananya/.nvm/versions/node/v20.16.0/bin/npm'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
